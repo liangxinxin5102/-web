@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>例26-2：访问DOM节点示例</title>
+</head>
+
+<body>
+    <div id="main">
+        <h3>我是第一个子节点</h3>
+        <div>我是第二个子节点</div>
+        <p>我是最后子节点</p>
+    </div>
+</body>
+<script type="text/javascript">
+    //  获取div对象
+    var main = document.getElementById('main');
+    //  获取div子节点集合
+    var mainChildNodes = main.children;
+    document.write("div的子节点个数为：" + mainChildNodes.length);      //获取元素个数
+    document.write("<br>" + mainChildNodes[1].tagName);     //获取第2个元素的标签
+    document.write("<br>" + mainChildNodes[2].innerHTML);   //获取第3个元素的内容
+</script>
+
+</html>

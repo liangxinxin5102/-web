@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>例15-3：背景重复background-repeat</title>
+    <style type="text/css">
+        div {
+            border: 2px solid #666666;
+            padding: 20px;
+            /*内边距20px，背景颜色将填充外围padding区域*/
+        }
+
+        div.norepeat {
+            width: 100px;
+            height: 100px;
+            background-repeat: no-repeat;
+            /*背景不重复*/
+        }
+
+        div.norepeat1 {
+            background-image: url(images/lane.jpg);
+            /*设置背景图像*/
+        }
+
+        div.repeatx {
+            height: 80px;
+            color: white;
+            /*白色文字*/
+            background-image: url(images/lane.jpg);
+            /*设置背景图像*/
+            background-repeat: repeat-x;
+        }
+
+        div.norepeat2 {
+            background-image: url(images/main.gif);
+            /*背景图像*/
+        }
+
+        div.repeaty {
+            width: 90px;
+            height: 150px;
+            color: brown;
+            /*棕色文字*/
+            background-image: url(images/main.gif);
+            /*背景图像*/
+            background-repeat: repeat-y;
+            /*垂直重复*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="norepeat norepeat1">背景不重复</div><br>
+    <div class="repeatx"><h1>水平重复</h1></div><br>
+    <div class="norepeat norepeat2">背景不重复</div><br>
+    <div class="repeaty"><h3>垂直重复</h3</div>
+</body>
+</html>

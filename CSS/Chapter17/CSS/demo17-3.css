@@ -1,0 +1,12 @@
+.inside {
+    list-style-position: inside;
+}
+
+.outside {
+    list-style-position: outside;
+}
+
+li {
+    border: 1px solid black;
+    margin-bottom: 2px;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>例27-3：BeforeUnLoad事件示例</title>
+    <script type="text/javascript">
+        window.onbeforeunload = function () {
+            if (window.event)
+                window.event.returnValue = "确定关闭窗口吗？";
+        }
+    </script>
+</head>
+
+<body>
+    UnLoad事件示例，关闭窗口会弹出确认对话框。
+    <br/>
+    <input type="button" onclick="window.close()" oncli value="关闭页面" />
+</body>
+
+
+</html>

@@ -1,0 +1,24 @@
+h1,
+p {
+    color: #333333;
+    font-family: "微软雅黑";
+}
+
+ul.parent {
+    border: 2px #888 solid;
+}
+
+ul.parent li {
+    padding: 5px 15px;
+    background: #eee;
+}
+
+ul.parent>li {
+    border-bottom: 1px #888 dashed;
+}
+
+#myLI {
+    font-family: 楷体;
+    font-style: italic;
+    background: #fff;
+}

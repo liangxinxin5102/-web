@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>例26-5：访问navigator对象示例</title>
+    <script tyep="text/javascript">
+        // out("<p>浏览器代号: " + navigator.appCodeName + "</p>");
+        // out("<p>浏览器名称: " + navigator.appName + "</p>");
+        // out("<p>浏览器版本: " + navigator.appVersion + "</p>");
+        // out("<p>启用Cookies: " + navigator.cookieEnabled + "</p>");
+
+var aWidth = screen.availWidth;
+var aHeight = screen.availHeight;
+var sWidth = screen.width;
+var sHeight = screen.height;
+
+var n=0
+
+out(location.protocol)
+        function out(str) {
+            document.write(str + "<br/>");
+        }
+
+    function reload(){
+        if(n<5){
+        out(n+"……");
+        n=n+1;
+        }else{
+            location.reload();
+        }
+                setTimeout("reload()",1000);
+    }
+
+    function write(){
+        if(n<5){
+        out(n+"……");
+        n=n+1;
+        }else{
+            location.reload();
+        }
+    }
+</script>
+</head>
+
+<body>
+    <input type="button" value="重新加载" onclick="reload()">
+</body>
+
+
+</html>

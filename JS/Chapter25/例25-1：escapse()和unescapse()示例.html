@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>例25-1：escapse()和unescapse()示例</title>
+    <script type="text/javascript">
+        var url = "www.exam.cn/student/examing.aspx?"
+        +"id=201810411101&name=刘子栋&setName=WEB开发技术"
+        out("原始URL为： " + url);
+        var urlEncode = escape(url);
+        out("编码后为： " + urlEncode);
+        var urlDecode = unescape(urlEncode)
+        out("解码还原后： " + urlDecode)
+
+        function out(str) {
+            document.write(str + "<br/>");
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

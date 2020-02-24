@@ -1,0 +1,39 @@
+body {
+    margin: 15px;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.container {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.container div {
+    margin: 15px;
+    border: 1px dashed black;
+}
+
+.container p {
+    border: 1px dashed black;
+    background-color: #f1bade;
+    /* clear:left; */
+}
+
+.box1 {
+    background-color: #a9d6ff;
+    padding: 10px;
+    float: left;    /*左浮动*/
+}
+
+.box2 {
+    background-color: #dddddd;
+    padding: 20px;
+    float: left;    /*左浮动*/
+}
+
+.box3 {
+    background-color: #ffffaa;
+    padding: 30px;
+    float: right;   /*右浮动*/
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>例27-5：鼠标移到表格上方时行变色</title>
+    <style type="text/css">
+        table, td, th {
+            border: 1px solid #999;
+            border-collapse: collapse;
+            /*合并边框*/
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.onload = init;
+
+        function init() {
+            var trs = document.getElementById("tbl").getElementsByTagName("tr");
+            var oldBG;
+            for (n in trs) {
+                trs[n].onmouseover = function () {
+                    oldBG = this.style.background; //记录旧颜色
+                    this.style.background = "#ccc"; //显示新颜色
+                }
+                trs[n].onmouseout = function () {
+                    this.style.background = oldBG; //恢复旧颜色
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <table id="tbl">
+        <caption>表格的标题</caption>
+        <tr>
+            <th>学号</th>
+            <th>姓名</th>
+            <th>年龄</th>
+        </tr>
+        <tr>
+            <td>2018106621101</td>
+            <td>刘子栋</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>2018106621102</td>
+            <td>James Harden</td>
+            <td>21</td>
+        </tr>
+    </table>
+
+</body>
+
+
+</html>

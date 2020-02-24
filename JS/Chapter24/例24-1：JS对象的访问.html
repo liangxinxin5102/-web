@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>例24-1：JS对象的访问</title>
+    <script type="text/javascript">
+        var person = {
+            name: "Daniel",
+            height: "130cm",
+        };
+        person.weight = "25kg";
+        person.getSlogan = function () {
+            return "Never give up!"
+        }
+        document.write(
+            "Name: " + person.name + "<br/>" +
+            "Height: " + person.height + "<br/>" +
+            "Weight: " + person["weight"] + "<br/>" +
+            "Slogan: " + person.getSlogan()
+        );
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

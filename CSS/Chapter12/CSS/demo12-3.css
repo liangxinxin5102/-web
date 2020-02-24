@@ -1,0 +1,19 @@
+/* demo12-3.css */
+
+div#main{
+    width: 600px;  /*绝对宽度*/
+    height: 300px;  /*绝对高度*/
+    border: 2px dashed #804000; /*边框，以方便看到容器的大小*/
+}
+
+div {
+    width: 200px;   /*绝对宽度*/
+    height: 100px;  /*绝对高度*/
+    border: 1px solid #666; /*边框，以方便看到容器的大小*/
+}
+
+p {
+    width: 50%;     /*父元素body宽度的50%*/
+    height: 50%;    /*父元素高度的50%*/
+    border: 1px solid #666; /*边框，以方便看到容器的大小*/
+}

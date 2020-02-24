@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>例27-7：表单元素的Focus和Blur事件</title>
+    <script type="text/javascript">
+        var txtID, tips;
+        window.onload = init;
+
+        function init() {
+            txtID = document.getElementById("txtID");
+            tips = document.getElementById("tips");
+            txtID.onfocus = Focus;
+            txtID.onblur = Blur;
+        }
+
+        function Focus() {
+            tips.innerHTML = "正在输入用户名……";
+        }
+
+        function Blur() {
+            if (txtID.value != "") {
+                tips.innerHTML = "用户名输入完成";
+            } else {
+                tips.innerHTML = "用户名不能为空";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div>用户名：<input type="text" id="txtID"><br/></div>
+    <span id="tips">请输入用户名</span>
+</body>
+
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>例15-6：背景大小background-size</title>
+    <style type="text/css">
+        body {
+            background-color: #cccccc;  /*背景颜色：灰色*/
+            background-image: url(images/fight.jpg);    /*背景图像*/
+            background-repeat: no-repeat;       /*背景不重复*/
+            background-position: center center; /*背景定位于正中央*/
+            background-attachment: fixed;   /*背景固定，不随页面滚动*/
+
+            /*下面4行分别是4种背景大小应用方式，不能同时应用*/
+            background-size: 100px 100px;   /*背景图片缩放到指定宽高*/
+            /*background-size: 50% 50%;   背景图片缩放到容器宽高的一*/
+            /*background-size: cover;   按比例放到填充满容器*/
+            /*background-size: contain;   背景图片缩放到指定宽高*/
+
+        }
+    </style>
+</head>
+
+<body>
+    <br/><br/><br/>
+    <div><h1>背景定位与关联应用示例</h1>
+</body>
+
+</html>

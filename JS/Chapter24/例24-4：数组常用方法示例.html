@@ -1,0 +1,29 @@
+2<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>例24-4：数组常用方法示例</title>
+    <script type="text/javascript">
+        var student = ["刘子栋", "王杰", "James"];
+        student.push("Jordan"); //使用push()方法追加新元素
+        document.write("数组中的元素： ")
+        //遍历输出全部元素
+        for (i = 0; i < student.length; i++) {
+            document.write(student[i] + "&nbsp;&nbsp;");
+        }
+        document.write("<br/>反序排列后为： ")
+        //反序排列元素
+        student.reverse();
+        for (i = 0; i < student.length; i++) {
+            document.write(student[i] + "&nbsp;&nbsp;");
+        }
+        document.write("<br/><br/>用逗号(,)连接成字符串： " + student.join(','));
+        document.write("<br/>用加号(+)连接成字符串： " + student.join('+'));
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

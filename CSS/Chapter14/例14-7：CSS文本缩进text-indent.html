@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>例14-7：CSS文本缩进text-indent</title>
+    <style type="text/css">
+        .bigger {
+            font-size: 20px;
+        }
+
+        .smaller {
+            font-size: 14px;
+        }
+
+        p {
+            text-indent: 2em;
+        }
+
+        p.indent50px {
+            text-indent: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <P class="bigger">缩进2个字符。使用相对单位em，保证无论字体如何调整，都缩进2个字符。</P>
+    <P class="smaller">缩进2个字符。使用相对单位em，保证无论字体如何调整，都缩进2个字符。</P>
+    <p class="indent50px bigger">这个段落演示缩进绝对值50px，与字体大小无关。</p>
+    <p class="indent50px smaller">这个段落演示缩进绝对值50px，与字体大小无关，不会随文字改变而变化。</p>
+</body>
+
+
+
+</html>

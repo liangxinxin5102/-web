@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>例22-5：JS操作元素出错</title>
+    <script type="text/javascript">
+        var btn = document.getElementById("spanHello");
+        btn.onclick = function () {
+            alert("Hello JavaScript!");
+        }
+    </script>
+</head>
+
+<body>
+    JS操作元素出错，原因是加载机制问题。<br/><br/>
+    <span id="spanHello" style="cursor: pointer;">显示问候</span>
+</body>
+
+</html>

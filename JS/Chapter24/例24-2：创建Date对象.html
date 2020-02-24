@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>例24-2：创建Date对象</title>
+    <script type="text/javascript">
+        //获取当前日期和时间
+        var myDate = new Date();
+        document.write(myDate);
+        ln();
+
+        //获取GTM标准零点过后1533517610185毫秒的时间
+        var myDate = new Date(1533517610185);
+        document.write(myDate);
+        ln();
+
+        //将时间字符串转换为对应的时间对象
+        var myDate = new Date("2010-9-25 13:06");
+        document.write(myDate);
+        ln();
+
+        //将具体的日期、时间参数，构造成Date对象
+        var myDate = new Date(2010, 9, 25, 13, 6);
+        document.write(myDate);
+        ln();
+
+
+        function ln() {
+            document.write("<br/>")
+        };
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

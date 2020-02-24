@@ -1,0 +1,24 @@
+/* demo11-2.css 样式表文件*/
+
+div {
+    color: blue;
+}
+
+p {
+    font-family: "微软雅黑";
+}
+
+span {
+    font-family: 楷体;
+    font-size: 20px;
+}
+
+.size25 {
+    color: red;
+    font-size: 25px;
+}
+
+#example {
+    font-weight: bold;
+    color: #000000
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>例27-4：鼠标移到按钮上方改变按钮样式</title>
+    <style type="text/css">
+        #btnDemo {
+            border: none;
+            font-size: 26px;
+            padding: 5px 10px;
+            border: 2px solid #999;
+        }
+
+        .out {
+            background-color: #eee;
+            font-family: 微软雅黑;
+            color: blue;
+        }
+
+        .over {
+            background-color: #f94306;
+            font-family: 楷体;
+            color: white;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = init;
+
+        function init() {
+            var btn = document.getElementById("btnDemo");
+            btn.onmouseover = function () {
+                btn.className = "over";
+            }
+            btn.onmouseout = function () {
+                btn.className = "out";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input id="btnDemo" class="out" type="button" value="鼠标移上来，改变样式" />
+</body>
+
+
+</html>

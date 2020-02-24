@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>例25-2：setTimeOut()示例</title>
+    <style type="text/css">
+        span#lblSec {
+            font-size: 32px;
+            color: #fb5404;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+    <script type="text/javascript">
+        var n = 10;
+        var lblSec;
+        window.onload = function () {
+            lblSec = document.getElementById("lblSec");
+            countdown();
+            setInterval("countdown()", 1000);
+        }
+
+        function countdown() {
+            lblSec.innerHTML = n;
+            if (n <= 0)
+                location.href = "http://www.uexam.cn/";
+            else {
+                n--;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h3>恭喜你注册成功，
+        <span id="lblSec"></span> 后跳转到首页</h3>
+</body>
+
+</html>

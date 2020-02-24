@@ -1,0 +1,15 @@
+p.number {
+    line-height: 26px;
+}
+
+p.small {
+    line-height: 60%;
+}
+
+p.middle {
+    line-height: 1.5;
+}
+
+p.big {
+    line-height: 300%;
+}

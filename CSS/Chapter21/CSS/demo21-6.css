@@ -1,0 +1,28 @@
+ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 120px;    /* 设置此宽度，将限定菜单项的宽度，浮动的菜单项达到宽度时将自动换行*/
+}
+ul.menu li{
+    width: 110px;
+    float: left;
+}
+
+/*链接四种状态相同的样式*/
+ul.menu li a {
+    width: 100px;   /*内容宽度100px*/
+    padding: 5px;   /*四周内边距各5px，会撑大宽度10px*/
+    text-align: center; /*文字居中对齐*/
+    /*通过设置背景图像的方式，给链接添加一个箭头图标，使之更加美观*/
+    background: #efefef  url('../images/arrow.gif') no-repeat 85px;
+    display: block;     /*以块级元素显示，每个元素独占一行，实现纵向排列*/
+    border-bottom: 2px solid black; /*给元素设置下边框*/
+    text-decoration: none;  /*去除a元素缺省的下划线*/
+    color: black;   /*黑色*/
+}
+/*当鼠标移到链接上方，改换背景图片、文字颜色*/
+ul.menu li a:hover {
+    background: #ccc url('../images/arrow2.gif') no-repeat 85px;
+    color: red;
+}

@@ -1,0 +1,12 @@
+html{
+    font-size: 10px;    /* 或：62.5% */
+}
+p{
+    font-size: 1.4rem;   /* 段落文字12px */
+}
+p.ex1{
+    font: italic bold 24px/2rem Courier,"Courier New ",Monospace
+}
+p.ex2{
+    font: 1.8rem 微软雅黑,黑体,楷体;
+}

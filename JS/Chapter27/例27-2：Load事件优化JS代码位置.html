@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>例27-2：Load事件优化JS代码位置</title>
+    <script type="text/javascript">
+        window.onload = init;
+
+        function init() {
+            var btn1 = document.getElementById("btnDemo1");
+            btn1.onclick = function () {
+                alert("动态绑定事件，匿名函数形式。")
+            }
+
+            var btn2 = document.getElementById("btnDemo2");
+            btn2.onclick = myHandler;
+
+            function myHandler() {
+                alert("动态绑定事件，普通函数形式。")
+            }
+        }
+
+        function popMsg() {
+            alert("静态绑定事件2");
+        }
+    </script>
+</head>
+
+<body>
+    <INPUT type="button" value="静态绑定1" onClick="alert('静态1');">
+    <br/>
+    <br/>
+    <INPUT type="button" value="静态绑定2" onClick="popMsg()">
+    <br/>
+    <br/>
+    <INPUT type="button" value="动态绑定1" id="btnDemo1">
+    <br/>
+    <br/>
+    <INPUT type="button" value="动态绑定2" id="btnDemo2">
+    <br/>
+    <br/>
+</body>
+
+
+</html>

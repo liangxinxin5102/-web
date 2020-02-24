@@ -1,0 +1,41 @@
+body {
+    margin: 20px;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.container {
+    border: 1px solid black;
+    padding: 30px;
+    position: relative;  /*元素本身并不移动，这样做的目的是：作为 .box2 盒子 absolute 定位的参照物*/
+}
+
+.container div {
+    /* margin: 15px; */
+    border: 1px dashed black;
+}
+
+.container p {
+    border: 1px dashed black;
+    background-color: #f1bade;
+}
+
+.box1 {
+    background-color: #a9d6ff;
+    padding: 10px;
+}
+
+.box2 {
+    background-color: #dddddd;
+    padding: 20px;
+    
+    position: absolute; /*绝对定位下，定位参考物为最近的、定位的父元素，本例中是 div.container 元素*/
+    right: 40px;
+    top: 25px;
+
+}
+
+.box3 {
+    background-color: #ffffaa;
+    padding: 30px;
+}

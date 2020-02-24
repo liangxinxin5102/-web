@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>例25-2：setTimeout()示例</title>
+    <script type="text/javascript">
+        function timedMsg() {
+            var t = setTimeout("timeout()", 5000);
+        }
+
+        function timeout() {
+            alert("5 seconds timeout! Let's GO!");
+            location.href = "http://www.baidu.com/";
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="button" value="5秒后跳转" onClick="timedMsg()">
+    </form>
+    <p>点击上面的按钮。5 秒后会显示一个消息框。</p>
+</body>
+
+</html>

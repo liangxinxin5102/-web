@@ -1,0 +1,82 @@
+body {
+    margin: 0px;    /*清除页面四周缺省的 8px 的空白*/
+}
+
+div#navi {
+    width: 750px;    /*假设这里固定页面宽度 750px。如果其它宽度，可以调整菜单项的宽度去适应*/
+    margin: 0px auto;    /*div在容器中水平居中，这里让容纳菜单的div在页面中水平居中*/
+}
+
+/*清除两级菜单的内、外边距*/
+#menu, #menu ul {
+    padding: 0px;   /*清除内边距*/
+    margin: 0px;    /*清除外边距*/
+}
+
+/*设置一级菜单。注：">" 表示直接后代，即儿子li元素，但不包括儿子的后代li*/
+#menu>li {
+    float: left;    /*一级菜单项左浮动，实现水平排列*/
+    width: 150px;   /*每个菜单项宽度*/
+}
+
+/*#menu 下的全部后代li，不论是几级嵌套*/
+#menu li {
+    list-style: none;   /*清除两级菜单中的列表项的样式*/
+}
+
+/*设置二级菜单的ul样式*/
+#menu ul {
+    margin-right: 1px;  /*右侧留1px边距，避免左右菜单“连”在一起*/
+    display: none;      /*隐藏。特别重要！二级菜单正常情况下不显示*/
+    position: absolute; /*绝对定位。特别重要：并不是为了偏移，而是为了脱离标准流，否则会把下面的网页内容挤下去，设置后，与内容可以重叠显示*/
+    width: 149px;       /*整体宽度150px，但是右侧有1px内边距，所以实际宽度149px*/
+}
+
+#menu li a {
+    text-decoration: none;  /*去除超链接的下划线*/
+    font-family: 微软雅黑, arial;   /*设置超链接字体*/
+}
+
+/*一级菜单的超链接设置*/
+#menu>li>a {
+    background-color: #ed8;     /*背景颜色*/
+    padding: 8px 20px;  /*上下内边距8px，左右内边距20px*/
+    display: block;     /*以块级元素显示，使宽、高等设置有效*/
+    text-align: center; /*文字在块内水平居中*/
+    font-size: 16px;    /*文字大小*/
+    margin-right: 1px;  /*右侧留1px边距，避免左右菜单“连”在一起*/
+    border-bottom: 5px solid #630;  /*底部设置粗线条，增加美观*/
+}
+
+/*当鼠标移到一级菜单的超边接上方时，超链接的样式*/
+#menu>li>a:hover {
+    background-color: #9cf;         /*背景颜色*/
+    border-bottom: 5px solid #f60;  /*底边框变色*/
+}
+
+/*特别重要：当鼠标移到一级菜单项li上方时，以块级元素的方式显示其子ul——即显示其子菜单！！！*/
+#menu>li:hover ul {
+    display: block; /*当前元素以块级元素显示*/
+}
+
+/*设置二级菜单中的超链接样式*/
+#menu li ul li a {
+    font-size: 14px;    /*文字大小*/
+    padding: 5px 0 5px 20px;    /*上、右、下、左 四个内边距*/
+    display: block;     /*以块级元素显示，使宽、高等设置有效*/
+    color: #FFF;      /*文字颜色*/
+    background: #47a url(../images/arrow_white.gif) no-repeat 10px 10px;    /*背景颜色，并设置一个背景图像作为指示“图标”*/
+}
+
+#menu li li a:hover {
+    color: #FF0;
+    background: #369 url(../images/arrow2.gif) no-repeat 9px 7px;
+}
+
+#container {
+    background-color: #eee;
+    width: 750px;
+    margin: 0 auto;
+    height: 600px;
+    clear: both;
+}

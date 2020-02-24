@@ -1,0 +1,47 @@
+.container {
+    width: 1000px;
+    /*绝对宽度：1000px*/
+    margin: 0 auto;
+    /*非常重要：设置容器自动居中！*/
+}
+
+.head {
+    height: 100px;
+    background: #EAEAEA;
+    margin-bottom: 10px;
+    /*底部外边距，与下面内容留出10px的空白*/
+}
+
+.left {
+    width: 200px;
+    height: 500px;
+    background: #CFCFCF;
+    float: left;
+    /*在父容器中左浮动（靠左对齐），脱离标准流*/
+}
+
+.right {
+    width: 780px;
+    height: 500px;
+    margin-left: 20px;
+    background: #e8f3ff;
+    float: right;
+    /*在父容器中右浮动（靠右对齐），脱离标准流*/
+}
+
+/*.clearBoth很重要，仅用于清除浮动影响，无任何实质内容*/
+
+.clearBoth {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    /*清除浮动影响*/
+}
+
+.foot {
+    height: 100px;
+    background: #cccccc;
+    margin-top: 10px;
+    /*顶部外边距，与上面内容留出10px的空白*/
+}
